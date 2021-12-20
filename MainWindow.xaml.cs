@@ -24,16 +24,39 @@ namespace Wpf_Circle1
         {
             InitializeComponent();
         }
-
-        private void VypocitejButtonClick(object sender, RoutedEventArgs e)
+        private void hodnota_TextChanged(object sender, TextChangedEventArgs e)
         {
-            //priprava promennych
 
         }
+        private void volba_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
+        }
         private void click_Click(object sender, RoutedEventArgs e)
         {
+            double hodnotaText = Convert.ToDouble(hodnota.Text);
+            if (hodnotaText <= 0)
+            {
+                Error.Text = "Zadané číslo musí být větší než 0";
+            }
+
+            else if (volba.Text == "r")
+            {
+                double x = (hodnotaText * 2 * Math.PI);
+                double y = (hodnotaText * hodnotaText * Math.PI); ;
+                obvod.Text = Math.Round(x, 2).ToString();
+                obsah.Text = Math.Round(y, 2).ToString();
+            }
+            else if (volba.Text == "d")
+            {
+                double x = (hodnotaText * Math.PI);
+                double y = ((Math.PI * hodnotaText * hodnotaText) / 4);
+                obvod.Text = Math.Round(x, 2).ToString();
+                obsah.Text = Math.Round(y, 2).ToString();
+            }
 
         }
+
+
     }
 }

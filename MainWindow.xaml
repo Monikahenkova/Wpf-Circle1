@@ -23,13 +23,13 @@
         <TextBox x:Name="PopisZadejBox" HorizontalAlignment="Left" Margin="20,33,0,0" Text="Zadej (r nebo d)" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="64" TextAlignment="Left" FontSize="18" VerticalContentAlignment="Center"/>
         <TextBox x:Name="PopisOBox" HorizontalAlignment="Left" Grid.Row="1" Text="O =" TextWrapping="Wrap" VerticalAlignment="Center" Width="140" Height="60" RenderTransformOrigin="0.5,-0.166" VerticalContentAlignment="Center" Margin="20,0,0,0" FontSize="18"/>
         <TextBox x:Name="PopisSBox" HorizontalAlignment="Left" Margin="20,0,0,0" Grid.Row="2" Text="S = " TextWrapping="Wrap" VerticalAlignment="Center" Width="140" Height="56" VerticalContentAlignment="Center" FontSize="18"/>
-        <ComboBox x:Name="volba" Grid.Column="2" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Width="120" Height="61" VerticalContentAlignment="Top" FontSize="18">
+        <ComboBox x:Name="volba" Grid.Column="2" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Width="120" Height="61" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Center">
             <ComboBoxItem Content="d"/>
             <ComboBoxItem Content="r"/>
         </ComboBox>
         <TextBox x:Name="obvod" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" Text="Vypocet Obvod" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Height="60" FontSize="18" HorizontalContentAlignment="Center" TextAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="obsah" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Text="Vypocet Obsah" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="60" FontSize="18" HorizontalContentAlignment="Center" TextAlignment="Center" VerticalContentAlignment="Center" Margin="0,33,0,0"/>
-        <TextBox x:Name="Error" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="60" Margin="20,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="345" FontSize="18" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="Error" Grid.Column="1" HorizontalAlignment="Center" Height="60" Margin="0,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
