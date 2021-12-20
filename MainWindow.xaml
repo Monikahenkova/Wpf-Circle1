@@ -1,0 +1,35 @@
+﻿<Window x:Class="Wpf_Circle1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Circle1"
+        mc:Ignorable="d"
+        Title="DÚ - Kruh ; Monika Hénková" Height="450" Width="800">
+    <Grid Height="434" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="65*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="48*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="click" Content="Vypočítej" Grid.Column="3" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Height="61" Width="170" FontSize="18" Click="click_Click"/>
+        <TextBox x:Name="hodnota" Grid.Column="1" HorizontalAlignment="Center" Margin="0,33,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="64" FontSize="18" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="PopisZadejBox" HorizontalAlignment="Left" Margin="20,33,0,0" Text="Zadej (r nebo d)" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="64" TextAlignment="Left" FontSize="18" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="PopisOBox" HorizontalAlignment="Left" Grid.Row="1" Text="O =" TextWrapping="Wrap" VerticalAlignment="Center" Width="140" Height="60" RenderTransformOrigin="0.5,-0.166" VerticalContentAlignment="Center" Margin="20,0,0,0" FontSize="18"/>
+        <TextBox x:Name="PopisSBox" HorizontalAlignment="Left" Margin="20,0,0,0" Grid.Row="2" Text="S = " TextWrapping="Wrap" VerticalAlignment="Center" Width="140" Height="56" VerticalContentAlignment="Center" FontSize="18"/>
+        <ComboBox x:Name="volba" Grid.Column="2" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Width="120" Height="61" VerticalContentAlignment="Top" FontSize="18">
+            <ComboBoxItem Content="d"/>
+            <ComboBoxItem Content="r"/>
+        </ComboBox>
+        <TextBox x:Name="obvod" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" Text="Vypocet Obvod" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Height="60" FontSize="18" HorizontalContentAlignment="Center" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="obsah" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Text="Vypocet Obsah" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="60" FontSize="18" HorizontalContentAlignment="Center" TextAlignment="Center" VerticalContentAlignment="Center" Margin="0,33,0,0"/>
+        <TextBox x:Name="Error" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="60" Margin="20,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="345" FontSize="18" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
